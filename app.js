@@ -6,8 +6,13 @@ const serverURL = "https://api.funtranslations.com/translate/minion.json";
 
 
 function getTranslationURL(input) {
-    return serverURL + "?" + "text=" + input;
+
+    var uri= serverURL + "?" + "text=" + input;
+    var uriEncoded = encodeURI(uri);
+    return uriEncoded;
 }
+
+
 
 function clickHandler() {
     var inputText = userInput.value;
