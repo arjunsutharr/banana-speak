@@ -12,7 +12,10 @@ function getTranslationURL(input) {
     return uriEncoded;
 }
 
-
+function errorHandler(error) {
+    console.log("error occured", error);
+    alert("something wrong with the server! please try again after some time")
+}
 
 function clickHandler() {
     var inputText = userInput.value;
@@ -22,6 +25,7 @@ function clickHandler() {
         var translatedText = json.contents.translated;
         outputDiv.innerText = translatedText;
     })
+    .catch(errorHandler)
 };
 
 btnTranslate.addEventListener("click", clickHandler);
