@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #f9cf59;
+    --secondary-color: #175f92;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* ---container--- */
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 20vh; */
+}
+
+
+/* ---Header--- */
+header {
+    height: 40vh;
+    width: 100vw;
+    background-color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+#user-input {
+  width: 40%;
+  height: 25rem;
+  padding: 1rem;
+}
+
+#output {
+  width: 40%;
+  height: 15rem;
+  border: 1px solid sandybrown;
+  padding: 1rem;
+}
+
+#btn-translate {
+  /* position: relative; */
+  /* right: 14rem; */
+  margin-top: 1rem;
+  padding: 0.7rem;
+  max-width: 43%;
+  width: 45.6%;
+  background-color: var(--primary-color);
+  border-style: none;
+  color: white;
+  cursor: pointer;
+}
+
+#btn-translate:hover {
+  color: var(--primary-color);
+  background-color: white;
+  border: 1px solid var(--primary-color);
+}
+
+#btn-translate:hover,
+#btn-translate:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--primary-color);
+  transform: translateY(-0.25em);
+}
+
+/* ---footer--- */
+footer {
+    margin-top: 3rem;
+    height: 25vh;
+    width: 100vw;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+footer h2 {
+    margin-bottom: .3rem;
+}
+
+footer p {
+    max-width: 40%;
+}
