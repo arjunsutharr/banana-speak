@@ -8,30 +8,49 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>Minion Talks</h1>
+      <header class="header">
+        <img src="./images/img1.png" alt="" srcset="">
+        <h1>
+          minion talks
+        </h1>
       </header>
-      <textarea
-        name="user-input"
-        placeholder="please type here"
-        id="user-input"
-        cols="30"
-        rows="10"
-      >
-      </textarea>
-      <br />
-      <button id="btn-translate">Translate</button>
-      <p>Translation will come here👇</p>
-      <div id="output"></div>
+
+      <main>
+        <div class="output-div">
+          <p class="output-div-heading">
+            Please type here...👇
+          </p>
+          <textarea
+          name="user-input"
+          placeholder="please type here..."
+          id="user-input"
+          cols="30"
+          rows="10"
+          >
+          </textarea>
+        </div>
+
+        <button id="btn-translate">
+          translate
+        </button>
+
+        <div class="output-div">
+          <p class="output-div-heading">
+            Translation will come here👇
+          </p>
+
+          <div id="output-div-box">
+          </div> 
+        </div>  
+      </main>
 
       <footer class="container-center">
+
         <h2>about</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam esse consequuntur eveniet debitis quo laudantium alias necessitatibus id quibusdam repellendus.
         </p>
       </footer>
-    </div>
 
     <script src="/app.js"></script>
   </body>
