@@ -1,6 +1,6 @@
 var userInput = document.querySelector("#user-input");
 var btnTranslate = document.querySelector("#btn-translate");
-var outputDiv = document.querySelector("#output");
+var outputDiv = document.querySelector("#output-container");
 
 const serverURL = "https://api.funtranslations.com/translate/minion.json";
 
