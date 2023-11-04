@@ -9,37 +9,37 @@
   </head>
   <body>
       <header class="header">
-        <img src="./images/img1.png" alt="" srcset="">
         <h1>
+          <img src="./images/img1.svg" alt="" srcset="">
           minion talks
         </h1>
       </header>
 
-      <main>
-        <div class="output-div">
-          <textarea id="user-input" cols="30" rows="10" placeholder="Please type here..."></textarea>
-        </div>
+      <main class="main">
+        <div class="main-container container">
+          <textarea class="translation-div translation-input" id="user-input" cols="30" rows="10" placeholder="Please type here..."></textarea>
 
-        <div class="button_img-container">
-          <button id="btn-translate">
-            translate
-          </button>
-          <img src="./images/img2.png" alt="" srcset="">
-        </div>
-        
-
-        <div class="output-div">
-          <div id="output-container">
+          <div class="button_img-container">
+            <div class="button-div">
+              <button id="btn-translate">
+                translate
+              </button>
+              <img src="./images/imgg2.svg" alt="" srcset="">
+           </div>
+          </div>
+          
+          <div class="translation-div translation-output">
           </div> 
-        </div>  
+        </div>   
       </main>
 
-      <footer class="container-center">
-
-        <h2>about</h2>
-        <p>
-          Are you a fan of minions? Did you know that the gibberish they say is an actual language. Use the translator to convert your text from English to Minion speak.
-        </p>
+      <footer>
+        <div class="container-center">
+          <h2>about</h2>
+          <p>
+            Are you a fan of minions? Did you know that the gibberish they say is an actual language. Use the translator to convert your text from English to Minion speak.
+          </p>
+        </div>
       </footer>
 
     <script src="/app.js"></script>

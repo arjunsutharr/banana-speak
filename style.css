@@ -8,6 +8,7 @@
 }
 
 body {
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   font-family: var(--primary-font-family);
@@ -23,74 +24,84 @@ body {
 
 /* ---Header--- */
 .header {
-  display: flex;
   background-color: var(--primary-color);
-  justify-content: center;
-  /* margin-bottom: 3rem; */
 }
 
 .header h1 {
-  padding: 0.8rem 0 0 0;
+  padding: 1rem;
   color: var(--secondary-color);
-  margin: 0px 0px;
+  margin: 0px;
   text-align: center;
-  margin-left: -2rem;
   font-weight: 700;
   font-size: 2.5rem;
+  display: block;
 }
 
 header img {
-  padding: 1rem;
-  width: 6%;
-  height: auto;
+  display: inline-block;
+  padding: 0rem;
+  width: 7%;
+  margin: 0 -1rem 0 0;
 }
 
 /*---main--- */
-main {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  top: 40%;
-  transform: translate(0, -40%);
+
+
+.main-container {
+  box-sizing: border-box;
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
 }
 
-#user-input {
-  width: 30vw;
-  height: 32vh;
-  border: 1px solid gray;
-  padding: 0.5rem;
+
+
+.translation-div {
+  display: inline-block;
+  width: 35%;
+  height: 35vh;
+  border: 1px solid rgb(169, 165, 165);
+  border-radius: 1px;
+}
+
+.translation-input {
+  padding: 0rem;
   resize: none;
   overflow-y: scroll;
+  
 }
 
-.output-div-heading {
-  margin: 0.5rem;
-  color: var(--grey-color);
-}
 
-#output-container {
-  width: 30vw;
-  height: 30vh;
-  border: 1px solid gray;
-  padding: 1rem;
+.translation-output {
+  padding: 0rem;
   overflow-y: scroll;
 }
 
 /* ---button--- */
 .button_img-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: inline-block;
+  width: 20%;
+  height: 30vh;
+  text-align: center;
+  position: relative;
+}
+
+.button-div {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .button_img-container img {
-  width: 10%;
+  width: 20%;
   transition: all .3s ease-in-out;
 }
 
 
 #btn-translate {
+  display: block;
   padding: 0.5rem 2.5rem;
   border-radius: 1px;
   background-color: var(--primary-color);
@@ -102,6 +113,7 @@ main {
   font-size: 1rem;
   letter-spacing: 0.05rem;
   transition: all 0.3s ease-in-out;
+
 }
 
 #btn-translate:hover {
@@ -141,3 +153,43 @@ footer p {
   font-weight: 400;
   color: var(--secondary-color);
 }
+
+
+/* ---Meadia queries-- */
+
+@media screen and (max-width: 885px) {
+  header img {
+    display: none;
+  }
+  
+  .translation-div {
+    display: block;
+    width: 100%;
+    height: 30vh;
+  }
+
+  .button_img-container {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .button-div {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .button_img-container img {
+    display: none;
+  }
+
+  footer {
+    position: static;
+    margin-top: 3rem;
+  }
+
+  footer p {
+    max-width: 100%;
+  }
+  
+} 
