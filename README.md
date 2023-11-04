@@ -1,2 +1,2 @@
-# banana-speak
+# minions-speak
  vanilaJS translation app
